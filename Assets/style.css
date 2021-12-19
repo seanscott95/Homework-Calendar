@@ -17,6 +17,11 @@ textarea {
   padding: 10px;
 }
 
+textarea:focus {
+  border: 5px solid blue;
+  opacity: 50%;
+}
+
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -71,7 +76,8 @@ textarea {
   color: white;
 }
 
-.saveBtn i:hover {
+.saveBtn:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+  color: black;
 }
