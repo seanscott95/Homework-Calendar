@@ -24,3 +24,82 @@ $("#submit-nine-am").on("click", () => {
 
 
 
+
+var tenAmTextArea = localStorage.getItem("ten-text");
+$("#ten-am").val(tenAmTextArea);
+
+$("#submit-ten-am").on("click", () => {
+    var newText = $("#ten-am").val();
+    localStorage.setItem("ten-text", newText);
+    console.log(newText);
+});
+
+
+var elevenAmTextArea = localStorage.getItem("eleven-text");
+$("#eleven-am").val(elevenAmTextArea);
+
+$("#submit-eleven-am").on("click", () => {
+    var newText = $("#eleven-am").val();
+    localStorage.setItem("eleven-text", newText);
+    console.log(newText);
+});
+
+
+var twelvePmTextArea = localStorage.getItem("twelve-text");
+$("#twelve-pm").val(twelvePmTextArea);
+
+$("#submit-twelve-pm").on("click", () => {
+    var newText = $("#twelve-pm").val();
+    localStorage.setItem("twelve-text", newText);
+    console.log(newText);
+});
+
+
+var onePmTextArea = localStorage.getItem("one-text");
+$("#one-pm").val(onePmTextArea);
+
+$("#submit-one-pm").on("click", () => {
+    var newText = $("#one-pm").val();
+    localStorage.setItem("one-text", newText);
+    console.log(newText);
+});
+
+
+var twoPmTextArea = localStorage.getItem("two-text");
+$("#two-pm").val(twoPmTextArea);
+
+$("#submit-two-pm").on("click", () => {
+    var newText = $("#two-pm").val();
+    localStorage.setItem("two-text", newText);
+    console.log(newText);
+});
+
+
+var threePmTextArea = localStorage.getItem("three-text");
+$("#three-pm").val(threePmTextArea);
+
+$("#submit-three-pm").on("click", () => {
+    var newText = $("#three-pm").val();
+    localStorage.setItem("three-text", newText);
+    console.log(newText);
+});
+
+
+var fourPmTextArea = localStorage.getItem("four-text");
+$("#four-pm").val(fourPmTextArea);
+
+$("#submit-four-pm").on("click", () => {
+    var newText = $("#four-pm").val();
+    localStorage.setItem("four-text", newText);
+    console.log(newText);
+});
+
+
+var fivePmTextArea = localStorage.getItem("five-text");
+$("#five-pm").val(fivePmTextArea);
+
+$("#submit-five-pm").on("click", () => {
+    var newText = $("#five-pm").val();
+    localStorage.setItem("five-text", newText);
+    console.log(newText);
+});
