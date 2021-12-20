@@ -8,7 +8,7 @@
 var currentDay = moment().format("dddd, MMMM Mo");
 $("#currentDay").text(currentDay);
 
-// Save button saves textarea to localStorage
+// Save button saves textarea to localStorage, other down below
 var nineAmTextArea = localStorage.getItem("nine-text");
 $("#nine-am").val(nineAmTextArea);
 
@@ -24,7 +24,7 @@ $("#submit-nine-am").on("click", () => {
 
 
 
-
+// Rest of textareas saving to own key in local storage
 var tenAmTextArea = localStorage.getItem("ten-text");
 $("#ten-am").val(tenAmTextArea);
 
