@@ -9,6 +9,18 @@ var currentDay = moment().format("dddd, MMMM Mo");
 $("#currentDay").text(currentDay);
 
 // Save button saves textarea to localStorage
+var nineAmTextArea = localStorage.getItem("nine-text");
+$("#nine-am").val(nineAmTextArea);
 
-// If the hour has past display time as grey, if else it is hte current hour display red, else display green
+$("#submit-nine-am").on("click", () => {
+    var newText = $("#nine-am").val();
+    localStorage.setItem("nine-text", newText);
+    console.log(newText);
+});
+ 
+
+// If the hour has past display time as grey, if else it is the current hour display red, else display green
+
+
+
 
