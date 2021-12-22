@@ -15,11 +15,29 @@ $("#nine-am").val(nineAmTextArea);
 $("#submit-nine-am").on("click", () => {
     var newText = $("#nine-am").val();
     localStorage.setItem("nine-text", newText);
-    console.log(newText);
+    // console.log(newText);
 });
  
 
 // If the hour has past display time as grey, if else it is the current hour display red, else display green
+
+var currentHour = moment().hour();
+var nineAmValue = moment().set("hour", 9).format("H");
+console.log(nineAmValue);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
