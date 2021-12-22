@@ -35,22 +35,18 @@ var fivePm = moment().set("hour", 17).format("H");
 // console.log(threePmValue); // returns 15
 
 var nineEl = $(".nine-am-value");
+var tenEl = $(".ten-am-value");
+var elevenEl = $(".eleven-am-value");
+var twelveEl = $(".twelve-pm-value");
+var oneEl = $(".one-pm-value");
+var twoEl = $(".two-pm-value");
+var threeEl = $(".three-pm-value");
+var fourEl = $(".four-pm-value");
+var fiveEl = $(".five-pm-value");
 
-var nineNine = nineEl.val(nineAm);
-$(".ten-am-value").val(tenAm);
-$(".eleven-am-value").val(elevenAm);
-$(".twelve-pm-value").val(twelvePm);
-$(".one-pm-value").val(onePm);
-$(".two-pm-value").val(twoPm);
-$(".three-pm-value").val(threePm);
-$(".four-pm-value").val(fourPm);
-$(".five-pm-value").val(fivePm);
-// console.log($(".nine-am-value").val()); // returns 9
-// console.log($(".three-pm-value").val()); // returns 15
 
 function start(hour, element) {
     if (hour < currentHour) {
-        //change color to grey
         element.css('background-color', 'grey');
     } else if (hour === currentHour) {
         element.css("background-color", "red");
@@ -60,6 +56,14 @@ function start(hour, element) {
 }
 
 start(nineAm, nineEl);
+start(tenAm, tenEl);
+start(elevenAm, elevenEl);
+start(twelvePm, twelveEl);
+start(onePm, oneEl);
+start(twoPm, twoEl);
+start(threePm, threeEl);
+start(fourPm, fourEl);
+start(fivePm, fiveEl);
 
 
 
