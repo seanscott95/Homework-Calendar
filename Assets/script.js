@@ -23,10 +23,19 @@ $("#submit-nine-am").on("click", () => {
 
 var currentHour = moment().hour();
 var nineAmValue = moment().set("hour", 9).format("H");
-console.log(nineAmValue);
+var tenAmValue = moment().set("hour", 10).format("H");
+var elevenAmValue = moment().set("hour", 11).format("H");
+var twelvePmValue = moment().set("hour", 12).format("H");
+var onePmValue = moment().set("hour", 13).format("H");
+var twoPmValue = moment().set("hour", 14).format("H");
+var threePmValue = moment().set("hour", 15).format("H");
+var fourPmValue = moment().set("hour", 16).format("H");
+var fivePmValue = moment().set("hour", 17).format("H");
+// console.log(nineAmValue); // returns 9
+// console.log(threePmValue); // returns 15
 
-
-
+$(".nine-am-value").val(nineAmValue);
+// console.log($(".nine-am-value").val());
 
 
 
