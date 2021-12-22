@@ -48,7 +48,7 @@ var fiveEl = $(".five-pm-value");
 function start(hour, element) {
     if (hour < currentHour) {
         element.css('background-color', 'LightGray');
-    } else if (hour === currentHour) {
+    } else if (hour == currentHour) {
         element.css("background-color", "red");
     } else {
         element.css("background-color", "green");
