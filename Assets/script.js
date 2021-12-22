@@ -22,22 +22,44 @@ $("#submit-nine-am").on("click", () => {
 // If the hour has past display time as grey, if else it is the current hour display red, else display green
 
 var currentHour = moment().hour();
-var nineAmValue = moment().set("hour", 9).format("H");
-var tenAmValue = moment().set("hour", 10).format("H");
-var elevenAmValue = moment().set("hour", 11).format("H");
-var twelvePmValue = moment().set("hour", 12).format("H");
-var onePmValue = moment().set("hour", 13).format("H");
-var twoPmValue = moment().set("hour", 14).format("H");
-var threePmValue = moment().set("hour", 15).format("H");
-var fourPmValue = moment().set("hour", 16).format("H");
-var fivePmValue = moment().set("hour", 17).format("H");
+var nineAm = moment().set("hour", 9).format("H");
+var tenAm = moment().set("hour", 10).format("H");
+var elevenAm = moment().set("hour", 11).format("H");
+var twelvePm = moment().set("hour", 12).format("H");
+var onePm = moment().set("hour", 13).format("H");
+var twoPm = moment().set("hour", 14).format("H");
+var threePm = moment().set("hour", 15).format("H");
+var fourPm = moment().set("hour", 16).format("H");
+var fivePm = moment().set("hour", 17).format("H");
 // console.log(nineAmValue); // returns 9
 // console.log(threePmValue); // returns 15
 
-$(".nine-am-value").val(nineAmValue);
-// console.log($(".nine-am-value").val());
+var nineEl = $(".nine-am-value");
 
+var nineNine = nineEl.val(nineAm);
+$(".ten-am-value").val(tenAm);
+$(".eleven-am-value").val(elevenAm);
+$(".twelve-pm-value").val(twelvePm);
+$(".one-pm-value").val(onePm);
+$(".two-pm-value").val(twoPm);
+$(".three-pm-value").val(threePm);
+$(".four-pm-value").val(fourPm);
+$(".five-pm-value").val(fivePm);
+// console.log($(".nine-am-value").val()); // returns 9
+// console.log($(".three-pm-value").val()); // returns 15
 
+function start(hour, element) {
+    if (hour < currentHour) {
+        //change color to grey
+        element.css('background-color', 'grey');
+    } else if (hour === currentHour) {
+        element.css("background-color", "red");
+    } else {
+        element.css("background-color", "green");
+    }
+}
+
+start(nineAm, nineEl);
 
 
 
