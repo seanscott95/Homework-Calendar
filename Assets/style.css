@@ -19,7 +19,7 @@ textarea {
 
 textarea:focus {
   border: 5px solid blue;
-  opacity: 50%;
+  opacity: 80%;
 }
 
 .jumbotron {
