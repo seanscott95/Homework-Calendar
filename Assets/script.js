@@ -5,8 +5,9 @@
 
 
 // Displays current day and time in - Monday, December 12th - format
-var currentDay = moment().format("dddd, MMMM Mo");
+var currentDay = moment();
 $("#currentDay").text(currentDay);
+console.log(currentDay);
 
 // Save button saves textarea to localStorage, other down below
 var nineAmTextArea = localStorage.getItem("nine-text");
