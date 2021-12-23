@@ -102,15 +102,15 @@ var fourPm = moment().set("hour", 16).format("H");
 var fivePm = moment().set("hour", 17).format("H");
 
 // Selecting each element to use in start()
-var nineEl = $(".nine-am-value");
-var tenEl = $(".ten-am-value");
-var elevenEl = $(".eleven-am-value");
-var twelveEl = $(".twelve-pm-value");
-var oneEl = $(".one-pm-value");
-var twoEl = $(".two-pm-value");
-var threeEl = $(".three-pm-value");
-var fourEl = $(".four-pm-value");
-var fiveEl = $(".five-pm-value");
+var nineEl = $("#nine-am");
+var tenEl = $("#ten-am");
+var elevenEl = $("#eleven-am");
+var twelveEl = $("#twelve-pm");
+var oneEl = $("#one-pm");
+var twoEl = $("#two-pm");
+var threeEl = $("#three-pm");
+var fourEl = $("#four-pm");
+var fiveEl = $("#five-pm");
 
 // Depending if the hour has passed, is current or in the future will decide itis color
 function start(hour, element) {
