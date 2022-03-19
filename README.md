@@ -1,6 +1,6 @@
-# 05 Third-Party APIs: Work Day Scheduler
+Work Day Scheduler
 
-This simple calendar application allows a user to save events for each hour of the day to a daily planner. The application runs in the browser and features dynamically updated HTML and CSS powered by jQuery. It was created to manage time effectively.
+This simple calendar application allows a user to save events for each hour of the day to a daily planner. The application runs in the browser and features dynamically updated HTML and CSS powered by jQuery. It was created to manage time effectively and to better understand using third-party API's.
 
 [Moment.js](https://momentjs.com/) was the library used to work with date and time.
 
